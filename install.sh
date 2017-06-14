@@ -56,7 +56,7 @@ cp /peer-finder "${WORK_DIR}"/
 
 echo installing redis-"${VERSION}" into "${INSTALL_VOLUME}"
 mkdir -p "${TEMP_DIR}" "${INSTALL_VOLUME}"/redis
-curl -sSL http://download.redis.io/releases/redis-"${VERSION}".tar.gz | tar -xzf - -C "${TEMP_DIR}"
+#curl -sSL http://download.redis.io/releases/redis-"${VERSION}".tar.gz | tar -xzf - -C "${TEMP_DIR}"
 
 cd "${TEMP_DIR}"/redis-"${VERSION}"/
 # Clean out existing deps, see https://github.com/antirez/redis/issues/722

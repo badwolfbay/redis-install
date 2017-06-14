@@ -23,6 +23,7 @@ RUN apk -U add curl make gcc sed bash musl-dev linux-headers \
 
 # See contrib/pets/peer-finder for details
 RUN curl -sSL -o /peer-finder https://storage.googleapis.com/kubernetes-release/pets/peer-finder
+RUN curl -sSL http://download.redis.io/releases/redis-3.2.0.tar.gz | tar -xzf - -C /tmp
 
 COPY on-start.sh /
 COPY install.sh /
